@@ -25,9 +25,6 @@ module.exports = function(config) {
     },
 
     files: [
-      // Sources and specs.
-      // Loaded through the System loader, in `test-main.js`.
-      {pattern: 'dist/all/@angular/**/*.js', included: false, watched: true},
 
       // Serve AngularJS for `ngUpgrade` testing.
       {pattern: 'node_modules/angular-1.5/angular?(.min).js', included: false, watched: false},
@@ -51,51 +48,15 @@ module.exports = function(config) {
       // Including systemjs because it defines `__eval`, which produces correct stack traces.
       'test-events.js',
       'third_party/shims_for_internal_tests.js',
-      'node_modules/systemjs/dist/system.src.js',
 
-      // Serve polyfills necessary for testing the `elements` package.
-      {
-        pattern: 'node_modules/@webcomponents/custom-elements/**/*.js',
-        included: false,
-        watched: false
-      },
-
-      {pattern: 'node_modules/rxjs/**', included: false, watched: false, served: true},
       'node_modules/reflect-metadata/Reflect.js',
-      'tools/build/file2modulename.js',
-      'test-main.js',
-      {pattern: 'dist/all/@angular/empty.*', included: false, watched: false},
+      'dist/legacy-test-bundle.spec.js',
       {pattern: 'packages/platform-browser/test/static_assets/**', included: false, watched: false},
       {
         pattern: 'packages/platform-browser/test/browser/static_assets/**',
         included: false,
         watched: false,
       },
-    ],
-
-    exclude: [
-      'dist/all/@angular/_testing_init/**',
-      'dist/all/@angular/**/e2e_test/**',
-      'dist/all/@angular/**/*node_only_spec.js',
-      'dist/all/@angular/benchpress/**',
-      'dist/all/@angular/compiler-cli/**',
-      'dist/all/@angular/compiler-cli/src/ngtsc/**',
-      'dist/all/@angular/compiler-cli/test/compliance/**',
-      'dist/all/@angular/compiler-cli/test/ngtsc/**',
-      'dist/all/@angular/compiler/test/aot/**',
-      'dist/all/@angular/compiler/test/render3/**',
-      'dist/all/@angular/core/test/bundling/**',
-      'dist/all/@angular/core/test/render3/ivy/**',
-      'dist/all/@angular/core/test/render3/jit/**',
-      'dist/all/@angular/core/test/render3/perf/**',
-      'dist/all/@angular/elements/schematics/**',
-      'dist/all/@angular/examples/**/e2e_test/*',
-      'dist/all/@angular/language-service/**',
-      'dist/all/@angular/localize/**/test/**',
-      'dist/all/@angular/localize/schematics/**',
-      'dist/all/@angular/router/**/test/**',
-      'dist/all/@angular/platform-browser/testing/e2e_util.js',
-      'dist/examples/**/e2e_test/**',
     ],
 
     customLaunchers: browserProvidersConf.customLaunchers,

@@ -609,14 +609,10 @@ jobs:
       - run:
           name: Preparing Bazel-generated fixtures required in legacy tests
           command: |
-            yarn bazel build \
-                //packages/core/test:downleveled_es5_fixture \
-                //packages/common/locales
-
-            # Needed for the ES5 downlevel reflector test in `packages/core/test/reflection`.
-            mkdir -p dist/all/@angular/core/test/reflection/
-            cp dist/bin/packages/core/test/reflection/es5_downleveled_inheritance_fixture.js \
-              dist/all/@angular/core/test/reflection/es5_downleveled_inheritance_fixture.js
+            yarn bazel build //packages/core/test:downleveled_es5_fixture //packages/common/locales
+            mkdir -p packages/common/locales/extra
+            cp dist/bin/packages/common/locales/*.ts packages/common/locales
+            cp dist/bin/packages/common/locales/extra/*.ts packages/common/locales/extra
             # Locale files are needed for i18n tests running within Saucelabs. These are added
             # directly as sources so that the TypeScript compilation of `/packages/tsconfig.json`
             # can succeed. Note that the base locale and currencies files are checked-in, so
@@ -624,10 +620,7 @@ jobs:
             mkdir -p packages/common/locales/extra
             cp dist/bin/packages/common/locales/*.ts packages/common/locales
             cp dist/bin/packages/common/locales/extra/*.ts packages/common/locales/extra
-      # add module umd tsc compile option so the test can work
-      # properly in the legacy browsers
-      - run: yarn tsc -p packages/tsconfig-legacy-saucelabs.json --module UMD
-      - run: yarn tsc -p modules --module UMD
+      - run: node ./scripts/ci/create-saucelabs-test-bundle.mjs
       - run: yarn bazel build //packages/zone.js:npm_package
       - run:
           # Waiting on ready ensures that we don't run tests too early without Saucelabs not being ready.
@@ -738,89 +731,7 @@ workflows:
           filters:
             branches:
               ignore: g3
-      - lint:
-          requires:
-            - setup
-      - test:
-          requires:
-            - setup
-      - build-npm-packages:
-          requires:
-            - setup
       - legacy-unit-tests-saucelabs:
           requires:
             - setup
-      - test_aio:
-          requires:
-            - setup
-      - deploy_aio:
-          requires:
-            - test_aio
-      - test_aio_local:
-          requires:
-            - build-npm-packages
-      - test_aio_tools:
-          requires:
-            - build-npm-packages
-      - test_docs_examples:
-          requires:
-            - build-npm-packages
-      - aio_preview:
-          # Only run on PR builds. (There can be no previews for non-PR builds.)
-          <<: *only_on_pull_requests
-          requires:
-            - setup
-      - test_aio_preview:
-          requires:
-            - aio_preview
-      - publish_packages_as_artifacts:
-          requires:
-            - build-npm-packages
-      - publish_snapshot:
-          <<: *only_release_branches
-          requires:
-            # Only publish if tests and integration tests pass
-            - test
-            # Only publish if `aio`/`docs` tests using the locally built Angular packages pass
-            - test_aio_local
-            - test_docs_examples
-            # Get the artifacts to publish from the build-packages-dist job
-            # since the publishing script expects the legacy outputs layout.
-            - build-npm-packages
-            - legacy-unit-tests-saucelabs
-      - components-repo-unit-tests:
-          requires:
-            - build-npm-packages
-      - test_zonejs:
-          requires:
-            - setup
-      - test_win:
-          requires:
-            - setup
-
-  monitoring:
-    jobs:
-      - setup
-      - aio_misc:
-          requires:
-            - setup
-      - aio_monitoring_stable:
-          requires:
-            - setup
-      - aio_monitoring_next:
-          requires:
-            - setup
-      - saucelabs:
-          # Testing saucelabs via Bazel currently taking longer than the legacy saucelabs job as it
-          # each karma_web_test target is provisioning and tearing down browsers which is adding
-          # a lot of overhead. Running once daily on master only to avoid wasting resources and
-          # slowing down CI for PRs.
-          # TODO: Run this job on all branches (including PRs) once karma_web_test targets can
-          # share provisioned browsers and we can remove the legacy saucelabs job.
-          requires:
-            - setup
-    triggers:
-      - schedule:
-          <<: *only_on_master
-          # Runs monitoring jobs at 10:00AM every day.
-          cron: '0 10 * * *'
+      

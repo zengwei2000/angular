@@ -10,3 +10,7 @@
 // Such as parse5/index is redirected here instead of loading into browser.
 
 export let __empty__: any;
+export let serializeDocument: any;
+export let DominoAdapter: any;
+export let parseDocument: any;
+export let setDomTypes: any;
