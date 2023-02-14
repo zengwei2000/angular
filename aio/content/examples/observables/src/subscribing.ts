@@ -1,5 +1,5 @@
 // #docplaster
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 
 export function docRegionObserver(console: Console) {
   // #docregion observer

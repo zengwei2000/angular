@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { Observable, asapScheduler, of, lastValueFrom } from 'rxjs';
+import { Observable, asapScheduler, of, lastValueFrom } from 'rxjs-7';;
 import { EMPTY_HTML, htmlEscape } from 'safevalues';
 import { htmlSafeByReview } from 'safevalues/restricted/reviewed';
 

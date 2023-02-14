@@ -5,8 +5,8 @@ import {DocumentContents, FETCHING_ERROR_ID, FILE_NOT_FOUND_ID} from 'app/docume
 import {Logger} from 'app/shared/logger.service';
 import {fromInnerHTML} from 'app/shared/security';
 import {TocService} from 'app/shared/toc.service';
-import {asapScheduler, Observable, of, timer} from 'rxjs';
-import {catchError, observeOn, switchMap, takeUntil, tap} from 'rxjs/operators';
+import {asapScheduler, Observable, of, timer} from 'rxjs-7';;
+import {catchError, observeOn, switchMap, takeUntil, tap} from 'rxjs-7/operators';
 import {EMPTY_HTML, unwrapHtml} from 'safevalues';
 
 

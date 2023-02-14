@@ -1,6 +1,6 @@
 // #docregion
 import { CanDeactivateFn } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 export interface CanComponentDeactivate {
   canDeactivate?: () => Observable<boolean> | Promise<boolean> | boolean;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Observable, Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import { Observable, Subject } from 'rxjs-7';;
+import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs-7/operators';
 
 import { NpmPackageInfo, PackageSearchService } from './package-search.service';
 

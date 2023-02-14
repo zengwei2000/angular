@@ -4,7 +4,7 @@
   we need to indent the imports with the function below.
 */
 // #docregion interval
-  import { interval } from 'rxjs';
+  import { interval } from 'rxjs-7';;
 
 // #enddocregion interval
 

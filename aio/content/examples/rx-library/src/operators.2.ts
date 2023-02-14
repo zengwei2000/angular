@@ -4,8 +4,8 @@
   we need to indent the imports with the function below.
 */
 // #docregion
-  import { of } from 'rxjs';
-  import { filter, map } from 'rxjs/operators';
+  import { of } from 'rxjs-7';;
+  import { filter, map } from 'rxjs-7/operators';
 
 // #enddocregion
 

@@ -1,8 +1,8 @@
 // #docregion
 import { Component } from '@angular/core';
 
-import { Observable, interval } from 'rxjs';
-import { map, take } from 'rxjs/operators';
+import { Observable, interval } from 'rxjs-7';;
+import { map, take } from 'rxjs-7/operators';
 
 @Component({
   selector: 'app-hero-async-message',

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
-import { AsyncSubject, Observable, of } from 'rxjs';
-import { catchError, map, switchMap, tap } from 'rxjs/operators';
+import { AsyncSubject, Observable, of } from 'rxjs-7';;
+import { catchError, map, switchMap, tap } from 'rxjs-7/operators';
 import { htmlEscape } from 'safevalues';
 import { htmlSafeByReview } from 'safevalues/restricted/reviewed';
 

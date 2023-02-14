@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 // #enddocregion import-httpclient
 
-import { Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs-7';;
 // #docregion import-rxjs-operators
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, map, tap } from 'rxjs-7/operators';
 // #enddocregion import-rxjs-operators
 
 import { Hero } from './hero';

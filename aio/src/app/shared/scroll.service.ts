@@ -1,7 +1,7 @@
 import {DOCUMENT, Location, PlatformLocation, PopStateEvent, ViewportScroller} from '@angular/common';
 import {Inject, Injectable, OnDestroy} from '@angular/core';
-import {fromEvent, Subject} from 'rxjs';
-import {debounceTime, takeUntil} from 'rxjs/operators';
+import {fromEvent, Subject} from 'rxjs-7';;
+import {debounceTime, takeUntil} from 'rxjs-7/operators';
 import {SessionStorage} from './storage.service';
 
 type ScrollPosition = [number, number];

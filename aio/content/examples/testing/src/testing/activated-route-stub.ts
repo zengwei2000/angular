@@ -3,7 +3,7 @@ export { ActivatedRoute } from '@angular/router';
 
 // #docregion activated-route-stub
 import { convertToParamMap, ParamMap, Params } from '@angular/router';
-import { ReplaySubject } from 'rxjs';
+import { ReplaySubject } from 'rxjs-7';;
 
 /**
  * An ActivateRoute test double with a `paramMap` observable.

@@ -1,5 +1,5 @@
-import { BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject } from 'rxjs-7';;
+import { map } from 'rxjs-7/operators';
 
 export class MockLocationService {
   urlSubject = new BehaviorSubject<string>(this.initialUrl);

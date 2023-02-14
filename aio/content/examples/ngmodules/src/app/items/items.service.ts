@@ -1,7 +1,7 @@
 import { Injectable, OnDestroy } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { delay } from 'rxjs-7/operators';
 
 export class Item {
   constructor(public id: number, public name: string) { }

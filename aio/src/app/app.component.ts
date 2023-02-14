@@ -20,8 +20,8 @@ import { LocationService } from 'app/shared/location.service';
 import { ScrollService } from 'app/shared/scroll.service';
 import { TocService } from 'app/shared/toc.service';
 import { SwUpdatesService } from 'app/sw-updates/sw-updates.service';
-import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
-import { first, map } from 'rxjs/operators';
+import { BehaviorSubject, combineLatest, Observable } from 'rxjs-7';;
+import { first, map } from 'rxjs-7/operators';
 
 const sideNavView = 'SideNav';
 export const showTopMenuWidth = 1150;

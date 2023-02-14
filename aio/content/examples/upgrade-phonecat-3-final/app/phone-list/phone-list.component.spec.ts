@@ -3,7 +3,7 @@ import {SpyLocation} from '@angular/common/testing';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 import {ActivatedRoute} from '@angular/router';
-import {Observable, of} from 'rxjs';
+import {Observable, of} from 'rxjs-7';;
 
 import {Phone, PhoneData} from '../core/phone/phone.service';
 

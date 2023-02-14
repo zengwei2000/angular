@@ -1,7 +1,7 @@
 // #docregion
 import { Injectable } from '@angular/core';
 
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 
 import { Hero } from './hero.model';
 

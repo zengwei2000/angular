@@ -1,8 +1,8 @@
 // #docplaster
 // #docregion
-import { switchMap } from 'rxjs/operators';
+import { switchMap } from 'rxjs-7/operators';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 // #docregion imports
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 // #enddocregion imports

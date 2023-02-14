@@ -21,8 +21,8 @@ import { ScrollService } from 'app/shared/scroll.service';
 import { SearchResultsComponent } from 'app/shared/search-results/search-results.component';
 import { TocItem, TocService } from 'app/shared/toc.service';
 import { SwUpdatesService } from 'app/sw-updates/sw-updates.service';
-import { of, Subject, timer } from 'rxjs';
-import { first, mapTo } from 'rxjs/operators';
+import { of, Subject, timer } from 'rxjs-7';;
+import { mapTo } from 'rxjs-7/operators';
 import { MockLocationService } from 'testing/location.service';
 import { MockLogger } from 'testing/logger.service';
 import { MockSearchService } from 'testing/search.service';
@@ -1185,7 +1185,7 @@ describe('AppComponent', () => {
         checkHostClass('sidenav', 'open');
 
         async function waitForSidenavOpenedChange() {
-          const promise = new Promise(resolve => sidenav.openedChange.pipe(first()).subscribe(resolve));
+          const promise = sidenav.openedChange.toPromise();
 
           await Promise.resolve();  // Wait for `MatSidenav.openedChange.emit()` to be called.
           jasmine.clock().tick(0);  // Notify `MatSidenav.openedChange` observers.

@@ -2,7 +2,7 @@
 // #docregion
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 import { Crisis } from '../crisis';
 import { DialogService } from '../../dialog.service';

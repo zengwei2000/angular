@@ -3,7 +3,7 @@ import {
   HttpEvent, HttpInterceptor, HttpHandler, HttpRequest
 } from '@angular/common/http';
 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 /** Pass untouched request through to the next request handler. */
 @Injectable()

@@ -4,9 +4,9 @@
 */
 // #docplaster
 // #docregion
-  import { fromEvent, Observable } from 'rxjs';
-  import { ajax } from 'rxjs/ajax';
-  import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs/operators';
+  import { fromEvent, Observable } from 'rxjs-7';;
+  import { ajax } from 'rxjs-7/ajax';
+  import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs-7/operators';
 
 // #enddocregion
 // eslint-disable-next-line @typescript-eslint/no-shadow

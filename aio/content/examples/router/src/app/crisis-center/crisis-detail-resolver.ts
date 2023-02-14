@@ -1,8 +1,8 @@
 // #docregion
 import {inject} from '@angular/core';
 import {ActivatedRouteSnapshot, ResolveFn, Router} from '@angular/router';
-import {EMPTY, of} from 'rxjs';
-import {mergeMap} from 'rxjs/operators';
+import {EMPTY, of} from 'rxjs-7';;
+import {mergeMap} from 'rxjs-7/operators';
 
 import {Crisis} from './crisis';
 import {CrisisService} from './crisis.service';

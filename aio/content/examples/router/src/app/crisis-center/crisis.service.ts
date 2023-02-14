@@ -1,7 +1,7 @@
 // #docplaster
 // #docregion
-import { BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject } from 'rxjs-7';;
+import { map } from 'rxjs-7/operators';
 
 import { Injectable } from '@angular/core';
 import { MessageService } from '../message.service';

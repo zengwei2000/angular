@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { htmlSafeByReview } from 'safevalues/restricted/reviewed';
 
-import { from, Observable } from 'rxjs';
-import { first, map, share } from 'rxjs/operators';
+import { from, Observable } from 'rxjs-7';;
+import { first, map, share } from 'rxjs-7/operators';
 
 import { Logger } from 'app/shared/logger.service';
 

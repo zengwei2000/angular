@@ -1,5 +1,5 @@
 // TODO: Add unit tests for this file.
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 // #docregion
 
 // Create an Observable that will start listening to geolocation updates

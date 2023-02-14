@@ -6,10 +6,12 @@ import os from 'os';
 import shelljs from 'shelljs';
 import treeKill from 'tree-kill';
 import yargs from 'yargs';
-import {hideBin} from 'yargs/helpers'
+import yargsHelpers from 'yargs/helpers';
 import getPort from 'get-port';
 import {constructExampleSandbox} from "./example-sandbox.mjs";
 import { getAdjustedChromeBinPathForWindows } from '../windows-chromium-path.js';
+
+const {hideBin} = yargsHelpers;
 
 shelljs.set('-e');
 

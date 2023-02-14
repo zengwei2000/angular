@@ -1,5 +1,5 @@
-import { of, throwError } from 'rxjs';
-import { mergeMap, tap } from 'rxjs/operators';
+import { of, throwError } from 'rxjs-7';;
+import { mergeMap, tap } from 'rxjs-7/operators';
 import { docRegionDefault } from './retry-on-error';
 
 describe('retry-on-error', () => {

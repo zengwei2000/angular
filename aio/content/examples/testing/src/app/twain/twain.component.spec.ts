@@ -3,8 +3,8 @@ import { fakeAsync, ComponentFixture, TestBed, tick, waitForAsync } from '@angul
 
 import { asyncData, asyncError } from '../../testing';
 
-import { of, throwError } from 'rxjs';
-import { last } from 'rxjs/operators';
+import { of, throwError } from 'rxjs-7';;
+import { last } from 'rxjs-7/operators';
 
 import { TwainComponent } from './twain.component';
 import { TwainService } from './twain.service';

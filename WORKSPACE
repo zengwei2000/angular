@@ -82,6 +82,7 @@ yarn_install(
         "//tools/esm-interop:patches/npm/@bazel+esbuild+5.7.1.patch",
         "//tools/esm-interop:patches/npm/@bazel+protractor+5.7.1.patch",
         "//tools/esm-interop:patches/npm/rxjs+6.6.7.patch",
+        "//aio:tools/cli-patches/bazel-architect-output.patch",
     ],
     # Currently disabled due to:
     #  1. Missing Windows support currently.

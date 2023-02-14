@@ -1,4 +1,4 @@
-import { Observable, Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs-7';;
 import { docRegionDelaySequence, docRegionMulticastSequence } from './multicasting';
 
 describe('multicasting', () => {

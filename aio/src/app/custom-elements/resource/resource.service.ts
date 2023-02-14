@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {AsyncSubject, connectable, Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {AsyncSubject, connectable, Observable} from 'rxjs-7';;
+import {map} from 'rxjs-7/operators';
 
 import {Category, Resource, SubCategory} from './resource.model';
 import {CONTENT_URL_PREFIX} from 'app/documents/document.service';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { switchMap } from 'rxjs-7/operators';
 import { LocationService } from 'app/shared/location.service';
 import { SearchResults } from 'app/search/interfaces';
 import { SearchService } from 'app/search/search.service';

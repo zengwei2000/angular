@@ -6,8 +6,8 @@ import { HttpHeaders } from '@angular/common/http';
 
 // #enddocregion http-options
 
-import { Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { catchError } from 'rxjs-7/operators';
 
 import { Hero } from './hero';
 import { HttpErrorHandler, HandleError } from '../http-error-handler.service';

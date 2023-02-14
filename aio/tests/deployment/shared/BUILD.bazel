@@ -8,7 +8,7 @@ ts_library(
     srcs = glob(["*.ts"]),
     data = [
         "URLS_TO_REDIRECT.txt",
-        "@aio_npm//cjson",
+        "@npm//cjson",
     ],
     deps = [
         "//aio/tools/firebase-test-utils",

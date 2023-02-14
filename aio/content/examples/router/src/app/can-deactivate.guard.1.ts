@@ -1,5 +1,5 @@
 // #docregion
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 import { CanDeactivateFn,
          ActivatedRouteSnapshot,
          RouterStateSnapshot } from '@angular/router';

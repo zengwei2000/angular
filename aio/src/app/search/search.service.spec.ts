@@ -1,6 +1,6 @@
 import { Injector, NgZone } from '@angular/core';
 import { fakeAsync, tick } from '@angular/core/testing';
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 import { SearchService } from './search.service';
 import { WebWorkerClient } from 'app/shared/web-worker';
 

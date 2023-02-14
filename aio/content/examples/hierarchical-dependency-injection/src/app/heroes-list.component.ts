@@ -1,6 +1,6 @@
 // #docregion
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 import { Hero, HeroTaxReturn } from './hero';
 import { HeroesService } from './heroes.service';

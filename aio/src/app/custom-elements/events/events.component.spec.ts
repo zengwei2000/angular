@@ -1,5 +1,5 @@
 import { Injector } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject } from 'rxjs-7';;
 import { AngularEvent, EventsComponent } from './events.component';
 import { EventsService } from './events.service';
 

@@ -1,6 +1,6 @@
 import {fakeAsync, tick, waitForAsync} from '@angular/core/testing';
-import {interval, of} from 'rxjs';
-import {delay, take} from 'rxjs/operators';
+import {interval, of} from 'rxjs-7';;
+import {delay, take} from 'rxjs-7/operators';
 
 describe('Angular async helper', () => {
   describe('async', () => {

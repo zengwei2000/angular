@@ -1,7 +1,7 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs-7';;
 
 import { LocationService } from 'app/shared/location.service';
 import { Logger } from 'app/shared/logger.service';

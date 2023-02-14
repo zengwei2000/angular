@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 // #enddocregion activated-route-and-parammap
 // #docregion rxjs-map
-import { map } from 'rxjs/operators';
+import { map } from 'rxjs-7/operators';
 // #enddocregion rxjs-map
 
 @Component({

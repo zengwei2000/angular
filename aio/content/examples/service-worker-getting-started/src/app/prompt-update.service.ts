@@ -1,7 +1,7 @@
 // #docplaster
 import { Injectable } from '@angular/core';
 // #docregion sw-replicate-available
-    import { filter, map } from 'rxjs/operators';
+    import { filter, map } from 'rxjs-7/operators';
 // #enddocregion sw-replicate-available
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 

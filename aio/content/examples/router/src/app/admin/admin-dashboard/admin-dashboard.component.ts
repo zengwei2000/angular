@@ -1,8 +1,8 @@
 // #docregion
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { map } from 'rxjs-7/operators';
 
 import { SelectivePreloadingStrategyService } from '../../selective-preloading-strategy.service';
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Observable, Observer } from 'rxjs';
+import { Observable, Observer } from 'rxjs-7';;
 
 import { Hero, HeroTaxReturn } from './hero';
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { delay } from 'rxjs-7/operators';
 
 const ALTER_EGOS = ['Eric'];
 

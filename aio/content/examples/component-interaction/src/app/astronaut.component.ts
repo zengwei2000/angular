@@ -2,7 +2,7 @@
 import { Component, Input, OnDestroy } from '@angular/core';
 
 import { MissionService } from './mission.service';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs-7';;
 
 @Component({
   selector: 'app-astronaut',

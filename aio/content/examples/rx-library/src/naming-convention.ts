@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 @Component({
   selector: 'app-stopwatch',

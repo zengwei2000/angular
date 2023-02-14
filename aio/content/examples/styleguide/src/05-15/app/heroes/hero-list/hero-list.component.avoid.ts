@@ -4,8 +4,8 @@
 import { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Observable } from 'rxjs';
-import { catchError, finalize } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { catchError, finalize } from 'rxjs-7/operators';
 
 import { Hero } from '../shared/hero.model';
 

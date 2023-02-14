@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 
 export interface Villain {
   id: number;

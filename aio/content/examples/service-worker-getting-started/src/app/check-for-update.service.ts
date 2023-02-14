@@ -1,7 +1,7 @@
 import { ApplicationRef, Injectable } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
-import { concat, interval } from 'rxjs';
-import { first } from 'rxjs/operators';
+import { concat, interval } from 'rxjs-7';;
+import { first } from 'rxjs-7/operators';
 
 @Injectable()
 export class CheckForUpdateService {

@@ -3,8 +3,8 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 
 import { CrisisService } from '../crisis.service';
 import { Crisis } from '../crisis';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { switchMap } from 'rxjs-7/operators';
 
 @Component({
   selector: 'app-crisis-list',

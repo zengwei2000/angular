@@ -1,8 +1,8 @@
 // #docregion
 import { Component, OnInit } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
-import { catchError, startWith } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { catchError, startWith } from 'rxjs-7/operators';
 
 import { TwainService } from './twain.service';
 

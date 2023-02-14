@@ -1,8 +1,8 @@
 // #docregion
 import { Injectable } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
-import { tap, delay } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { tap, delay } from 'rxjs-7/operators';
 
 @Injectable({
   providedIn: 'root',

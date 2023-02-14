@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Injector } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { Subject } from 'rxjs';
+import { Subject } from 'rxjs-7';;
 
 import { ScrollItem, ScrollSpyInfo, ScrollSpyService } from 'app/shared/scroll-spy.service';
 import { TocItem, TocService } from './toc.service';

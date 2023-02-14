@@ -1,6 +1,6 @@
 // TODO: Feature Componetized like HeroCenter
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 import { HeroService } from '../hero.service';
 import { Hero } from '../hero';

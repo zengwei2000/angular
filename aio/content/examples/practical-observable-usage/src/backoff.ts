@@ -1,8 +1,8 @@
 // #docplaster
 // #docregion
-import { of, pipe, range, throwError, timer, zip } from 'rxjs';
-import { ajax } from 'rxjs/ajax';
-import { map, mergeMap, retryWhen } from 'rxjs/operators';
+import { of, pipe, range, throwError, timer, zip } from 'rxjs-7';;
+import { ajax } from 'rxjs-7/ajax';
+import { map, mergeMap, retryWhen } from 'rxjs-7/operators';
 
 export function backoff(maxTries: number, delay: number) {
   return pipe(

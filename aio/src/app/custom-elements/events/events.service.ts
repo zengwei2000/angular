@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {AsyncSubject, connectable, Observable, of} from 'rxjs';
-import {catchError} from 'rxjs/operators';
+import {AsyncSubject, connectable, Observable, of} from 'rxjs-7';;
+import {catchError} from 'rxjs-7/operators';
 
 import {AngularEvent} from './events.component';
 import {CONTENT_URL_PREFIX} from 'app/documents/document.service';

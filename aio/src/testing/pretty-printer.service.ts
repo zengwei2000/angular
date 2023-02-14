@@ -3,7 +3,7 @@
 // This is a mock implementation that does not load `prettify.js` and does not pollute the global
 // scope.
 
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 import { unwrapHtml } from 'safevalues';
 import { htmlSafeByReview } from 'safevalues/restricted/reviewed';
 

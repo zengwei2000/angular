@@ -2,8 +2,8 @@
 // #docregion
 // TODO: Feature Componetized like CrisisCenter
 // #docregion rxjs-imports
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { switchMap } from 'rxjs-7/operators';
 // #enddocregion rxjs-imports
 import { Component, OnInit } from '@angular/core';
 // #docregion import-router

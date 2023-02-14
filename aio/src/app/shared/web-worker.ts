@@ -1,5 +1,5 @@
 import {NgZone} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs-7';;
 import {WebWorkerMessage} from './web-worker-message';
 
 export class WebWorkerClient {

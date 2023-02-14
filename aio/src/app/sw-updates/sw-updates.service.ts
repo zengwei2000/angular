@@ -1,7 +1,7 @@
 import { ApplicationRef, ErrorHandler, Injectable, OnDestroy } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
-import { concat, interval, Subject } from 'rxjs';
-import { first, takeUntil, tap } from 'rxjs/operators';
+import { concat, interval, Subject } from 'rxjs-7';;
+import { first, takeUntil, tap } from 'rxjs-7/operators';
 
 import { LocationService } from 'app/shared/location.service';
 import { Logger } from 'app/shared/logger.service';

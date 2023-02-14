@@ -8,14 +8,14 @@ import {
   HttpInterceptor,
   HttpRequest,
 } from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs-7';;
 /*
 // #docregion reading-context
-import {retry} from 'rxjs';
+import {retry} from 'rxjs-7';;
 // #enddocregion reading-context
 */
 // #docregion mutable-context
-import {retry, tap} from 'rxjs/operators';
+import {retry, tap} from 'rxjs-7/operators';
 // #enddocregion mutable-context
 
 // #docregion context-token, mutable-context

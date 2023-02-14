@@ -1,5 +1,5 @@
-import { interval } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import { interval } from 'rxjs-7';;
+import { tap } from 'rxjs-7/operators';
 import { backoff } from './backoff';
 
 describe('backoff()', () => {

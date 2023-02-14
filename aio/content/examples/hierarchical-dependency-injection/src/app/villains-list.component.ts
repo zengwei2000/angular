@@ -1,6 +1,6 @@
 // #docregion
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 import { Villain, VillainsService } from './villains.service';
 

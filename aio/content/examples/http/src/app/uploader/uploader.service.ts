@@ -4,8 +4,8 @@ import {
   HttpRequest, HttpResponse, HttpErrorResponse
 } from '@angular/common/http';
 
-import { of } from 'rxjs';
-import { catchError, last, map, tap } from 'rxjs/operators';
+import { of } from 'rxjs-7';;
+import { catchError, last, map, tap } from 'rxjs-7/operators';
 
 import { MessageService } from '../message.service';
 

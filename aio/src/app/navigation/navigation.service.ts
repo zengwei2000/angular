@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {AsyncSubject, combineLatest, connectable, Observable, ReplaySubject} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {AsyncSubject, combineLatest, connectable, Observable, ReplaySubject} from 'rxjs-7';;
+import {map} from 'rxjs-7/operators';
 
 import {LocationService} from 'app/shared/location.service';
 import {CONTENT_URL_PREFIX} from 'app/documents/document.service';

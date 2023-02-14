@@ -3,7 +3,7 @@
 // #docregion
 import { Component, Output, OnInit, EventEmitter, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 // #docregion eventemitter
 
@@ -53,7 +53,7 @@ export class AsyncObservablePipeComponent {
 // #docregion router
 
 import { Router, NavigationStart } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { filter } from 'rxjs-7/operators';
 
 @Component({
   selector: 'app-routable',

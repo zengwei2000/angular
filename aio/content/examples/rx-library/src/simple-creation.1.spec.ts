@@ -1,4 +1,4 @@
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 import { docRegionPromise } from './simple-creation.1';
 
 describe('simple-creation.1', () => {

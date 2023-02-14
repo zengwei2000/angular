@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 import { asyncData } from '../../../testing';
 
-import { map } from 'rxjs/operators';
+import { map } from 'rxjs-7/operators';
 
 // re-export for tester convenience
 export { Hero } from '../hero';

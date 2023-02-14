@@ -5,8 +5,8 @@ import {
   HttpInterceptor, HttpHandler
 } from '@angular/common/http';
 
-import { Observable, of } from 'rxjs';
-import { startWith, tap } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { startWith, tap } from 'rxjs-7/operators';
 
 import { RequestCache } from '../request-cache.service';
 import { searchUrl } from '../package-search/package-search.service';

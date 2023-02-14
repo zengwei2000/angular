@@ -1,6 +1,6 @@
 // #docplaster
 
-import { Observable, Observer } from 'rxjs';
+import { Observable, Observer } from 'rxjs-7';;
 
 export function docRegionDelaySequence(console: Console) {
   // #docregion delay_sequence

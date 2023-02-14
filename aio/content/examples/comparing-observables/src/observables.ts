@@ -1,7 +1,7 @@
 // #docplaster
 
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs-7';;
+import { map } from 'rxjs-7/operators';
 
 export function docRegionObservable(console: Console) {
   // #docregion observable

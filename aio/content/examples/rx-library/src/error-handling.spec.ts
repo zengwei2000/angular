@@ -1,4 +1,4 @@
-import { Subject, throwError } from 'rxjs';
+import { Subject, throwError } from 'rxjs-7';;
 import { docRegionDefault } from './error-handling';
 
 describe('error-handling', () => {

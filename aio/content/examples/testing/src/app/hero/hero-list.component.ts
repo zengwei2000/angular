@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 import { Hero } from '../model/hero';
 import { HeroService } from '../model/hero.service';

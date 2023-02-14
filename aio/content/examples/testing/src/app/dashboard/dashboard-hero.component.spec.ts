@@ -3,7 +3,7 @@
 import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { first } from 'rxjs/operators';
+import { first } from 'rxjs-7/operators';
 
 import { addMatchers, click } from '../../testing';
 import { Hero } from '../model/hero';

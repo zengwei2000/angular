@@ -8,13 +8,13 @@
 
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-import { combineLatest, Observable, ReplaySubject } from 'rxjs';
+import { combineLatest, Observable, ReplaySubject } from 'rxjs-7';;
 
 import { LocationService } from 'app/shared/location.service';
 import { ApiItem, ApiSection, ApiService } from './api.service';
 
 import { Option } from 'app/shared/select/select.component';
-import { map } from 'rxjs/operators';
+import { map } from 'rxjs-7/operators';
 
 class SearchCriteria {
   query = '';

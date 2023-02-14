@@ -1,7 +1,7 @@
 // #docregion
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 
 // #docregion downgrade-injectable
 declare const angular: angular.IAngularStatic;

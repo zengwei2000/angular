@@ -1,4 +1,4 @@
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 import { docRegionAjax } from './simple-creation';
 
 describe('ajax', () => {

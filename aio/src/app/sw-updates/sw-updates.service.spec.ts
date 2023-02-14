@@ -1,7 +1,7 @@
 import { ApplicationRef, ErrorHandler, Injector } from '@angular/core';
 import { discardPeriodicTasks, fakeAsync, tick } from '@angular/core/testing';
 import { SwUpdate } from '@angular/service-worker';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs-7';;
 
 import { LocationService } from 'app/shared/location.service';
 import { Logger } from 'app/shared/logger.service';

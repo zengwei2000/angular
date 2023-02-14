@@ -1,6 +1,6 @@
 import { Injector } from '@angular/core';
 
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 
 import { ContributorGroup } from './contributors.model';
 import { ContributorListComponent } from './contributor-list.component';

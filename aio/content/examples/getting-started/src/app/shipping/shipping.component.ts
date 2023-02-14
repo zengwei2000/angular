@@ -2,7 +2,7 @@
 // #docregion imports
 import { Component, OnInit } from '@angular/core';
 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs-7';;
 import { CartService } from '../cart.service';
 // #enddocregion
 

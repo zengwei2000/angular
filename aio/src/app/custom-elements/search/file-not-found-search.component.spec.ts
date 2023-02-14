@@ -1,7 +1,7 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Subject } from 'rxjs';
+import { Subject } from 'rxjs-7';;
 import { LocationService } from 'app/shared/location.service';
 import { MockLocationService } from 'testing/location.service';
 import { SearchResults } from 'app/search/interfaces';

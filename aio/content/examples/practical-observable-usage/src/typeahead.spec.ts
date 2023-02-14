@@ -1,6 +1,6 @@
 /// <reference types="node" />
 
-import { of } from 'rxjs';
+import { of } from 'rxjs-7';;
 import { docRegionTypeahead } from './typeahead';
 
 describe('typeahead', () => {

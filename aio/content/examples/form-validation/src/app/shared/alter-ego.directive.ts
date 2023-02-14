@@ -5,9 +5,9 @@ import {
   NG_ASYNC_VALIDATORS,
   ValidationErrors
 } from '@angular/forms';
-import { catchError, map } from 'rxjs/operators';
+import { catchError, map } from 'rxjs-7/operators';
 import { HeroesService } from './heroes.service';
-import { Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs-7';;
 
 // #docregion async-validator
 @Injectable({ providedIn: 'root' })

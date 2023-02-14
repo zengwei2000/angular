@@ -1,8 +1,8 @@
 // #docregion
 import { Injectable } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs-7';;
+import { map } from 'rxjs-7/operators';
 
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';

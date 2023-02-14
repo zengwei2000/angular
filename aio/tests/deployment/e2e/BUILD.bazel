@@ -23,7 +23,7 @@ protractor_web_test_suite(
     name = "e2e",
     data = [
         "//aio/tests/deployment/shared",
-        "@aio_npm//cjson",
+        "@npm//cjson",
     ],
     on_prepare = "on-prepare.js",
     tags = TEST_TAGS,

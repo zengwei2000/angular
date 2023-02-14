@@ -1,8 +1,8 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
-import { ReplaySubject, Subject } from 'rxjs';
-import { takeUntil, tap } from 'rxjs/operators';
+import { ReplaySubject, Subject } from 'rxjs-7';;
+import { takeUntil, tap } from 'rxjs-7/operators';
 
 import { Logger } from 'app/shared/logger.service';
 import { DOC_CONTENT_URL_PREFIX } from 'app/documents/document.service';

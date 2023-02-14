@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
 
 // #docregion rxjs-imports
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs-7';;
+import { catchError, retry } from 'rxjs-7/operators';
 // #enddocregion rxjs-imports
 
 // #docregion config-interface

@@ -1,7 +1,7 @@
 // #docregion
 import { Injectable } from '@angular/core';
 import { PreloadingStrategy, Route } from '@angular/router';
-import { Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs-7';;
 
 @Injectable({
   providedIn: 'root',

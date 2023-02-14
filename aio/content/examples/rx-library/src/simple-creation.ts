@@ -4,8 +4,8 @@
   we need to indent the imports with the function below.
 */
 // #docregion ajax
-  import { Observable } from 'rxjs';
-  import { ajax } from 'rxjs/ajax';
+  import { Observable } from 'rxjs-7';;
+  import { ajax } from 'rxjs-7/ajax';
 
 // #enddocregion ajax
 

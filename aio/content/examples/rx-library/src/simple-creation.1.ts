@@ -4,7 +4,7 @@
   we need to indent the imports with the function below.
 */
 // #docregion promise
-  import { from, Observable } from 'rxjs';
+  import { from, Observable } from 'rxjs-7';;
 
 // #enddocregion promise
 
