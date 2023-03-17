@@ -65,7 +65,7 @@ issue or PR.
 ## Caretaker Triage Process (Initial Triage)
 
 The caretaker assigns `area:  *` labels to new issues as they come in.
-Untriaged issues can be found by selecting the issues with no milestone.
+Untreated issues can be found by selecting the issues with no milestone.
 
 If an issue or PR obviously relates to a release regression, the caretaker must assign an
 appropriate priority (`P0` or `P1`) and ensure that someone from the team is actively working to
